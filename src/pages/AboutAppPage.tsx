@@ -14,8 +14,8 @@ export function AboutAppPage() {
               Photos Wallpaper
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/72">
-              A small local utility that rotates your desktop wallpaper using images from your own
-              Photos library. It runs from the menu bar, supports multiple displays, and keeps the
+              Photos Wallpaper is a macOS menu bar app that rotates your desktop wallpaper using images from your own
+              Photos library, with multiple different schedules available. It supports multiple displays, and keeps the
               data flow on your Mac.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -52,12 +52,12 @@ export function AboutAppPage() {
         </div>
       </section>
 
-      <section id="privacy" className="py-14">
+      <section id="privacy" className="scroll-mt-24 py-14">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <h2 className="font-display text-4xl">Privacy posture</h2>
             <p className="mt-4 leading-7 text-ink/70">
-              Photos Wallpaper is intentionally boring about data. It has no database, backend,
+              Photos Wallpaper has no database, backend,
               account layer, analytics, or advertising integration.
             </p>
           </div>
@@ -65,13 +65,13 @@ export function AboutAppPage() {
         </div>
       </section>
 
-      <section id="setup" className="bg-pine py-14 text-paper">
+      <section id="setup" className="scroll-mt-24 bg-pine py-14 text-paper">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <h2 className="font-display text-4xl">Typical flow</h2>
             <p className="mt-4 leading-7 text-paper/72">
-              The production app is a native macOS utility. This starter website is ready to grow into
-              docs, release notes, screenshots, and download pages.
+              The production app is a native macOS utility. This starter website is will grow to include 
+              release notes, screenshots, and download pages.
             </p>
           </div>
           <ol className="grid gap-3">

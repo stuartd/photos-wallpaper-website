@@ -2,6 +2,10 @@
 
 Static product website for Photos Wallpaper, a local-first macOS menu bar app that rotates desktop wallpaper from the user's Photos library.
 
+## Project
+
+- Repository: https://github.com/stuartd/photos-wallpaper-website
+
 ## Stack
 
 - Vite
