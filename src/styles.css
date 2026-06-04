@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color: #121417;
-  background: #f7f4ec;
+  color: #17181c;
+  background: #f5f6f8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +23,6 @@ body {
 }
 
 ::selection {
-  background: #f0b35b;
-  color: #121417;
+  background: #f5c542;
+  color: #17181c;
 }

@@ -5,19 +5,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#121417",
-        paper: "#f7f4ec",
-        pine: "#173f35",
-        fern: "#2f6f5e",
-        sun: "#f0b35b",
-        clay: "#b95f43"
+        ink: "#17181c",
+        paper: "#f5f6f8",
+        pine: "#1f4f63",
+        fern: "#2f6f6a",
+        sun: "#f5c542",
+        clay: "#b85c38",
+        line: "#d9dde5",
+        panel: "#ffffff",
+        mist: "#edf1f5"
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Fraunces", "Georgia", "serif"]
+        display: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       boxShadow: {
-        soft: "0 24px 80px rgba(18, 20, 23, 0.12)"
+        soft: "0 22px 70px rgba(23, 24, 28, 0.14)"
       }
     }
   },
