@@ -17,7 +17,7 @@ export function HeroPreview() {
         </div>
         <div className="flex items-start gap-2 bg-panel p-4 text-sm leading-6 text-ink/70">
           <ShieldCheck size={17} className="mt-0.5 shrink-0 text-fern" aria-hidden />
-          <span>Schedule changes, manual refresh, history, diagnostics, privacy, and quit live in one compact menu.</span>
+          <span>All the controls you need in one compact menu.</span>
         </div>
       </figcaption>
     </figure>

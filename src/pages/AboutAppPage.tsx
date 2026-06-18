@@ -14,9 +14,10 @@ export function AboutAppPage() {
               Photos Wallpaper
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl">
-              A small Mac utility that rotates your desktop wallpaper from your own Photos library.
-              Pick a schedule, cover every display, and keep the whole data path on your Mac.
-            </p>
+              Photos Wallpaper brings your photo library back to the desktop.<br /><br />
+              Revisit your memories as wallpaper across every display, with simple schedules.<br /><br />
+              Everything stays on your Mac.
+              </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#setup"
@@ -51,8 +52,8 @@ export function AboutAppPage() {
           <div className="mb-8 max-w-3xl">
             <h2 className="font-display text-3xl font-bold sm:text-4xl">What it does</h2>
             <p className="mt-3 leading-7 text-ink/70">
-              The website should make the app legible at a glance: where the photos come from, when
-              the wallpaper changes, what happens on multiple displays, and where the data goes.
+              Where do the photos come from? When does
+              the wallpaper change? What happens if I have multiple displays?
             </p>
           </div>
           <FeatureGrid features={appFeatures} />
@@ -64,15 +65,14 @@ export function AboutAppPage() {
           <div>
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Privacy model</h2>
             <p className="mt-4 leading-7 text-ink/70">
-              Photos Wallpaper has no database, backend, account layer, analytics, or advertising
-              integration. The important promise is simple: your photo library is not being turned
-              into a cloud feature.
+              Photos Wallpaper has no database, backend, account layer, analytics, or advertising. It's your photo library, now and always.
             </p>
           </div>
           <FeatureGrid features={privacyPoints} />
         </div>
       </section>
-
+      
+      
       <section id="setup" className="scroll-mt-24 border-y border-line bg-ink py-14 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
@@ -111,7 +111,7 @@ export function AboutAppPage() {
             ))}
           </ol>
         </div>
-      </section>
-    </>
+      </section>    
+      </>
   );
 }

@@ -6,33 +6,33 @@ export const navItems = [
 
 export const appFeatures = [
   {
-    title: "Choose a Photos source",
-    description: "Point the app at your Photos library and let it pick images from the collection you already keep.",
+    title: "Uses your photos",
+    description: "Rediscover the photos in your library - Photos Wallpaper brings them back to your desktop, one wallpaper at a time.",
     icon: Images
   },
   {
     title: "Control it from the menu bar",
-    description: "Refresh now, change schedule, and see the current state without opening a full app window.",
+    description: "Refresh the wallpaper, change the schedule, and see the current state without opening a full app window.",
     icon: Menu
   },
   {
-    title: "Multi-display aware",
-    description: "Picks one photo per connected screen, so a desk with two displays does not get treated like one canvas.",
-    icon: Laptop
-  },
-  {
-    title: "Use a real schedule",
-    description: "Refresh on login, on wake, every few minutes, hourly, daily, or only when you ask.",
-    icon: Clock
-  },
-  {
     title: "Find the photo again",
-    description: "Writes a local plain-text history file when you want to identify the image that appeared.",
+    description: "When you see a wallpaper photo you like (or don't like!) you can use the app to save it to the Photos Wallpaper album in your Photos library.",
     icon: History
   },
   {
-    title: "Keep the flow local",
-    description: "No account, analytics, uploads, advertising services, database, or server-side data flow.",
+    title: "Multi-display aware",
+    description: "Sets a photo per display (as long as you have more photos than displays!).",
+    icon: Laptop
+  },
+  {
+    title: "Choose a schedule, if you like",
+    description: "Refresh on login, every 5, 15 or 30 minutes, hourly, daily, or when you want a change. You can use the menu to change the wallpaper at any time.",
+    icon: Clock
+  },
+  {
+    title: "Keeps it local",
+    description: "No account, analytics, uploads, advertising services, database, or server.",
     icon: ShieldCheck
   }
 ];
