@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { Camera, Github, MonitorUp, Shield } from "lucide-react";
+import { Camera, MonitorUp, Shield } from "lucide-react";
 import { navItems } from "../content/site";
 
 export function AppLayout() {
@@ -46,6 +46,12 @@ export function AppLayout() {
               <MonitorUp size={16} aria-hidden /> macOS
             </span>
           </div>
+          <a
+            href="/#privacy"
+            className="text-sm font-semibold text-ink/70 transition hover:text-ink"
+          >
+            Privacy
+          </a>
         </div>
       </footer>
     </div>
