@@ -13,5 +13,14 @@ describe("AboutAppPage", () => {
     expect(screen.getByRole("heading", { name: "Photos Wallpaper" })).toBeInTheDocument();
     expect(screen.getByText(/No account, analytics, uploads/)).toBeInTheDocument();
     expect(screen.getByText(/Multi-display aware/)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Support" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Email support" })).toHaveAttribute(
+      "href",
+      "mailto:support@photoswallpaper.app"
+    );
+    expect(screen.getByRole("link", { name: "Open an issue" })).toHaveAttribute(
+      "href",
+      "https://github.com/stuartd/photos-wallpaper-website/issues"
+    );
   });
 });

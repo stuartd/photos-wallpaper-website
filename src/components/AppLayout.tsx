@@ -46,12 +46,14 @@ export function AppLayout() {
               <MonitorUp size={16} aria-hidden /> macOS
             </span>
           </div>
-          <a
-            href="/#privacy"
-            className="text-sm font-semibold text-ink/70 transition hover:text-ink"
-          >
-            Privacy
-          </a>
+          <div className="flex flex-wrap gap-4 text-sm font-semibold text-ink/70">
+            <a href="/#privacy" className="transition hover:text-ink">
+              Privacy
+            </a>
+            <a href="/#support" className="transition hover:text-ink">
+              Support
+            </a>
+          </div>
         </div>
       </footer>
     </div>
