@@ -27,7 +27,7 @@ export const appFeatures = [
   },
   {
     title: "Choose a schedule, if you like",
-    description: "Refresh on login, every 5, 15 or 30 minutes, hourly, daily, or when you want a change. You can use the menu to change the wallpaper at any time.",
+    description: "Refresh on login, every 5, 15 or 30 minutes, hourly, daily, or just when you want a change. You can use the menu to change the wallpaper at any time.",
     icon: Clock
   },
   {
@@ -39,8 +39,8 @@ export const appFeatures = [
 
 export const privacyPoints = [
   {
-    title: "Photos permission is explicit",
-    description: "The app asks macOS for Photos access because it needs image data to set wallpapers.",
+    title: "Photos permission is required",
+    description: "The app asks macOS for Photos access because it needs image data to be able to set wallpapers.",
     icon: Lock
   },
   {

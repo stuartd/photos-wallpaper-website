@@ -38,21 +38,12 @@ export function AppLayout() {
 
       <footer className="border-t border-ink/10 bg-panel text-ink">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:px-8 md:grid-cols-[1fr_auto]">
-          <div>
-            <p className="font-display text-2xl font-bold">Photos Wallpaper</p>
-            <p className="mt-2 max-w-xl text-sm leading-6 text-ink/65">
-              A local-first macOS utility for turning your Photos library into a changing desktop.
-            </p>
-          </div>
           <div className="flex flex-wrap items-center gap-3 text-sm text-ink/70">
             <span className="inline-flex items-center gap-2">
               <Shield size={16} aria-hidden /> Local-first
             </span>
             <span className="inline-flex items-center gap-2">
               <MonitorUp size={16} aria-hidden /> macOS
-            </span>
-            <span className="inline-flex items-center gap-2">
-              <Github size={16} aria-hidden /> Starter site
             </span>
           </div>
         </div>
