@@ -16,7 +16,7 @@ describe("AboutAppPage", () => {
     expect(screen.getByRole("heading", { name: "Support" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Email support" })).toHaveAttribute(
       "href",
-      "mailto:support@photoswallpaper.app"
+      "mailto:support@photos-wallpaper.app"
     );
     expect(screen.getByRole("link", { name: "Open an issue" })).toHaveAttribute(
       "href",

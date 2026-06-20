@@ -16,8 +16,22 @@ const config: Config = {
         mist: "#edf1f5"
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "SF Pro Text",
+          "Segoe UI",
+          "system-ui",
+          "sans-serif"
+        ],
+        display: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "SF Pro Display",
+          "Segoe UI",
+          "system-ui",
+          "sans-serif"
+        ]
       },
       boxShadow: {
         soft: "0 22px 70px rgba(23, 24, 28, 0.14)"
