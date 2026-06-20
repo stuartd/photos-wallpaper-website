@@ -1,4 +1,4 @@
-import { Github, Mail, Terminal } from "lucide-react";
+import { Github, Mail, Send, Terminal } from "lucide-react";
 import { FeatureGrid } from "../components/FeatureGrid";
 import { HeroPreview } from "../components/HeroPreview";
 import { appFeatures, privacyPoints, productStats, supportPoints } from "../content/site";
@@ -25,6 +25,13 @@ export function AboutAppPage() {
               Everything stays on your Mac.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="mailto:testflight@photos-wallpaper.app?subject=Photos%20Wallpaper%20TestFlight"
+                className="inline-flex items-center gap-2 rounded-md bg-pine px-5 py-3 text-sm font-semibold text-paper shadow-soft transition hover:bg-fern"
+              >
+                <Send size={18} aria-hidden />
+                Join the TestFlight
+              </a>
               <a
                 href="#privacy"
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
@@ -85,7 +92,7 @@ export function AboutAppPage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="mailto:support@photoswallpaper.app"
+                href="mailto:support@photos-wallpaper.app"
                 className="inline-flex items-center gap-2 rounded-md bg-clay px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine"
               >
                 <Mail size={18} aria-hidden />
