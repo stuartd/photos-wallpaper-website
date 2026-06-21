@@ -25,17 +25,17 @@ export function AboutAppPage() {
               <br />
               Everything stays on your Mac.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
               <a
                 href="mailto:testflight@photos-wallpaper.app?subject=Photos%20Wallpaper%20TestFlight"
-                className="inline-flex items-center gap-2 rounded-md bg-pine px-5 py-3 text-sm font-semibold text-paper shadow-soft transition hover:bg-fern"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-pine px-5 py-3 text-sm font-semibold text-paper shadow-soft transition hover:bg-fern"
               >
                 <Send size={18} aria-hidden />
                 Join the TestFlight
               </a>
               <a
                 href="#privacy"
-                className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
               >
                 <Terminal size={18} aria-hidden />
                 Privacy Model
@@ -44,7 +44,7 @@ export function AboutAppPage() {
                 href="https://github.com/stuartd/photos-wallpaper-website"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist sm:col-span-2"
               >
                 <SiGithub size={18} aria-hidden />
                 View code on GitHub
