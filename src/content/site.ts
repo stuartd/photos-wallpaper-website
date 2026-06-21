@@ -1,8 +1,8 @@
 import {
   Clock,
+  CodeXml,
   EyeOff,
   FolderOpen,
-  Github,
   History,
   Images,
   Laptop,
@@ -84,7 +84,7 @@ export const supportPoints = [
     title: "Use GitHub Issues",
     description:
       "For reproducible bugs and feature requests, open an issue with what happened and what you expected.",
-    icon: Github
+    icon: CodeXml
   },
   {
     title: "Include the basics",

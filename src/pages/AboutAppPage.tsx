@@ -1,4 +1,5 @@
-import { Github, Mail, Send, Terminal } from "lucide-react";
+import { Mail, Send, Terminal } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import { FeatureGrid } from "../components/FeatureGrid";
 import { HeroPreview } from "../components/HeroPreview";
 import { appFeatures, privacyPoints, productStats, supportPoints } from "../content/site";
@@ -38,6 +39,15 @@ export function AboutAppPage() {
               >
                 <Terminal size={18} aria-hidden />
                 Privacy Model
+              </a>
+              <a
+                href="https://github.com/stuartd/photos-wallpaper-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
+              >
+                <SiGithub size={18} aria-hidden />
+                View code on GitHub
               </a>
             </div>
             <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-4">
@@ -87,7 +97,7 @@ export function AboutAppPage() {
               requests.
             </p>
             <p className="mt-4 leading-7 text-ink/70">
-              Photos Wallpaper does not upload your library. Please only include screenshots or
+              Please only include screenshots or
               photo details if you intentionally choose to share them.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -100,9 +110,11 @@ export function AboutAppPage() {
               </a>
               <a
                 href="https://github.com/stuartd/photos-wallpaper-website/issues"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
               >
-                <Github size={18} aria-hidden />
+                <SiGithub size={18} aria-hidden />
                 Open an issue
               </a>
             </div>
