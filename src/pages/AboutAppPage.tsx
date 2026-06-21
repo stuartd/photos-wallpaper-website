@@ -41,13 +41,13 @@ export function AboutAppPage() {
                 Privacy Model
               </a>
               <a
-                href="https://github.com/stuartd/photos-wallpaper-website"
+                href="https://github.com/stuartd/photos-wallpaper#readme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist sm:col-span-2"
               >
                 <SiGithub size={18} aria-hidden />
-                View code on GitHub
+                App code on GitHub
               </a>
             </div>
             <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-4">
