@@ -6,6 +6,8 @@ test("home page renders the product story", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Photos Wallpaper" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "What it does" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Privacy Model" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Support" })).toBeVisible();
+  await expect(page.getByText("Check Photos permission")).toBeVisible();
   await expect(
     page.getByRole("contentinfo").getByRole("link", { name: "Privacy" })
   ).toHaveAttribute("href", "/#privacy");

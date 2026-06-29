@@ -57,40 +57,65 @@ export const privacyPoints = [
   {
     title: "Photos permission is required",
     description:
-      "The app asks macOS for Photos access because it needs image data to be able to set wallpapers.",
+      "The app asks macOS for Photos access because it needs image data to choose and render wallpapers.",
     icon: Lock
   },
   {
-    title: "Nothing gets uploaded",
-    description: "Photo selection, wallpaper rendering, and logging all happen locally on the Mac.",
+    title: "No tracking or uploads",
+    description:
+      "Photos Wallpaper has no account system, analytics, ads, telemetry, backend, or server-side storage.",
     icon: EyeOff
   },
   {
-    title: "Settings stay on disk",
+    title: "Local files stay local",
     description:
-      "Schedule choice, login-item state, wallpaper history, and diagnostics stay on disk.",
+      "Schedule choice, generated wallpaper cache files, wallpaper history, and runtime diagnostics stay on disk.",
     icon: FolderOpen
   }
 ];
 
+export const privacyDetails = [
+  "Photos are read only after macOS Photos permission allows access.",
+  "Generated wallpaper files are local cache files used because macOS wallpaper APIs need file URLs.",
+  "Wallpaper history and runtime diagnostics are local plain-text files for your own troubleshooting."
+];
+
 export const supportPoints = [
+  {
+    title: "Check Photos permission",
+    description:
+      "Open System Settings > Privacy & Security > Photos and make sure Photos Wallpaper is allowed to read your library.",
+    icon: Lock
+  },
+  {
+    title: "Try a manual refresh",
+    description:
+      "Choose Change Wallpaper Now from the menu. If that works, check the selected schedule and whether the Mac was asleep at the scheduled time.",
+    icon: Clock
+  },
+  {
+    title: "Confirm Start at Login",
+    description:
+      "Use the Start at Login toggle in the menu. If macOS still does not launch it, remove and re-enable the login item in System Settings.",
+    icon: MonitorCheck
+  },
+  {
+    title: "Use local logs",
+    description:
+      "Use Logs > Show Wallpaper History or Logs > Show Runtime Log from the menu. The logs stay on your Mac unless you choose to share details.",
+    icon: History
+  },
   {
     title: "Email support",
     description:
-      "For general help, questions, or anything you would rather not post publicly, send an email.",
+      "For general help or anything private, email support@photos-wallpaper.app with your macOS version, app version, display setup, and relevant log lines.",
     icon: Mail
   },
   {
     title: "Use GitHub Issues",
     description:
-      "For reproducible bugs and feature requests, open an issue with what happened and what you expected.",
+      "For reproducible bugs and feature requests, open an issue with what happened, what you expected, and whether manual refresh works.",
     icon: CodeXml
-  },
-  {
-    title: "Include the basics",
-    description:
-      "Your macOS version, Photos Wallpaper version, and display setup usually make support much faster.",
-    icon: MonitorCheck
   }
 ];
 

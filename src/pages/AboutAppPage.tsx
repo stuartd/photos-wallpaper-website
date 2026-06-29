@@ -2,7 +2,13 @@ import { Mail, Send, Terminal } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { FeatureGrid } from "../components/FeatureGrid";
 import { HeroPreview } from "../components/HeroPreview";
-import { appFeatures, privacyPoints, productStats, supportPoints } from "../content/site";
+import {
+  appFeatures,
+  privacyDetails,
+  privacyPoints,
+  productStats,
+  supportPoints
+} from "../content/site";
 
 export function AboutAppPage() {
   return (
@@ -80,8 +86,16 @@ export function AboutAppPage() {
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Privacy model</h2>
             <p className="mt-4 leading-7 text-ink/70">
               Photos Wallpaper has no database, backend, account layer, analytics, or advertising.
-              It's your photo library, now and always.
+              It's your photo library, now and always, and support diagnostics stay on disk unless
+              you choose to share them.
             </p>
+            <ul className="mt-6 grid gap-3 text-sm leading-6 text-ink/72">
+              {privacyDetails.map((detail) => (
+                <li key={detail} className="rounded-md border border-line bg-panel p-4">
+                  {detail}
+                </li>
+              ))}
+            </ul>
           </div>
           <FeatureGrid features={privacyPoints} />
         </div>
@@ -93,12 +107,12 @@ export function AboutAppPage() {
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Support</h2>
             <p className="mt-4 leading-7 text-ink/70">
               Need help with Photos Wallpaper? Email is best for general help or anything you would
-              rather not post publicly. GitHub Issues are welcome for reproducible bugs and feature
-              requests.
+              rather not post publicly. Start with the checks here, then include your macOS version,
+              app version, display setup, and relevant local log lines if you need to get in touch.
             </p>
             <p className="mt-4 leading-7 text-ink/70">
-              Please only include screenshots or
-              photo details if you intentionally choose to share them.
+              Please only include screenshots or photo details if you intentionally choose to share
+              them.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
