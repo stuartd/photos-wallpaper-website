@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { Camera, MonitorUp, Shield } from "lucide-react";
+import { Camera, MonitorUp, Shield, UserRound } from "lucide-react";
 import { navItems } from "../content/site";
 
 export function AppLayout() {
@@ -45,6 +45,14 @@ export function AppLayout() {
             <span className="inline-flex items-center gap-2">
               <MonitorUp size={16} aria-hidden /> macOS
             </span>
+            <a
+              href="https://stuartd.dev"
+              className="inline-flex items-center gap-2 transition hover:text-ink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <UserRound size={16} aria-hidden /> Made by Stuart
+            </a>
           </div>
           <div className="flex flex-wrap gap-4 text-sm font-semibold text-ink/70">
             <a href="/#privacy" className="transition hover:text-ink">
