@@ -114,6 +114,10 @@ export function AboutAppPage() {
               Please only include screenshots or photo details if you intentionally choose to share
               them.
             </p>
+            <br />
+            <p>
+              Opening an issue requires a <a href="https://github.com">GitHub</a> account.
+            </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="mailto:support@photos-wallpaper.app"
@@ -123,7 +127,7 @@ export function AboutAppPage() {
                 Email support
               </a>
               <a
-                href="https://github.com/stuartd/photos-wallpaper-website/issues"
+                href="https://github.com/stuartd/photos-wallpaper-website/issues/new"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
