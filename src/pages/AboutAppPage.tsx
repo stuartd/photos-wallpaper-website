@@ -26,7 +26,7 @@ export function AboutAppPage() {
               Photos Wallpaper brings your photo library back to the desktop.
               <br />
               <br />
-              Revisit your memories as wallpaper across every display, with simple schedules.
+              Revisit your memories as wallpaper across every display, on a schedule that you choose.
               <br />
               <br />
               Everything stays on your Mac.
@@ -56,7 +56,7 @@ export function AboutAppPage() {
                 App code on GitHub
               </a>
             </div>
-            <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-4">
+            <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-3">
               {productStats.map((stat) => (
                 <div key={stat.label} className="bg-panel p-4">
                   <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-ink/50">
@@ -106,7 +106,10 @@ export function AboutAppPage() {
           <div>
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Support</h2>
             <p className="mt-4 leading-7 text-ink/70">
-              Need help with Photos Wallpaper? Email is best for general help or anything you would
+              Need help with Photos Wallpaper?
+            </p>
+            <p className="mt-4 leading-7 text-ink/70">
+              Email is best for general help or anything you would
               rather not post publicly. Start with the checks here, then include your macOS version,
               app version, display setup, and relevant local log lines if you need to get in touch.
             </p>

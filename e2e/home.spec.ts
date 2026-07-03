@@ -14,4 +14,13 @@ test("home page renders the product story", async ({ page }) => {
   await expect(
     page.getByRole("contentinfo").getByRole("link", { name: "Support" })
   ).toHaveAttribute("href", "/#support");
+  await expect(
+    page.getByRole("contentinfo").getByRole("link", { name: "Made by Stuart" })
+  ).toHaveAttribute("href", "https://stuartd.dev");
+  await expect(
+    page.getByRole("contentinfo").getByRole("link", { name: "Made by Stuart" })
+  ).toHaveAttribute("target", "_blank");
+  await expect(
+    page.getByRole("contentinfo").getByRole("link", { name: "Made by Stuart" })
+  ).toHaveAttribute("rel", "noopener noreferrer");
 });

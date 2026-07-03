@@ -1,10 +1,10 @@
 # Photos Wallpaper Website
 
-Static product website for Photos Wallpaper, a local-first macOS menu bar app that rotates desktop wallpaper from the user's Photos library.
+Static product website for Photos Wallpaper, a macOS menu bar app that rotates random desktop wallpaper from the user's Photos library on a selected schedule.
 
-## Project
+## Website
 
-- Repository: https://github.com/stuartd/photos-wallpaper-website
+[Photos Wallpaper.app](https://photos-wallpaper.app)
 
 ## Stack
 

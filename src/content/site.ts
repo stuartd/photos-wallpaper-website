@@ -43,7 +43,7 @@ export const appFeatures = [
   {
     title: "Choose a schedule, if you like",
     description:
-      "Refresh on login, every 5, 15 or 30 minutes, hourly, daily, or just when you want a change. You can use the menu to change the wallpaper at any time.",
+      "Refresh the wallpaper automatically on a schedule - login, every 5, 15 or 30 minutes, hourly, or daily - or if you just want a change, use the app menu to change the wallpaper at any time.",
     icon: Clock
   },
   {
@@ -69,7 +69,7 @@ export const privacyPoints = [
   {
     title: "Local files stay local",
     description:
-      "Schedule choice, generated wallpaper cache files, wallpaper history, and runtime diagnostics stay on disk.",
+      "Schedule choice, generated wallpaper cache files, and wallpaper history stay on disk.",
     icon: FolderOpen
   }
 ];
@@ -90,7 +90,7 @@ export const supportPoints = [
   {
     title: "Try a manual refresh",
     description:
-      "Choose Change Wallpaper Now from the menu. If that works, check the selected schedule and whether the Mac was asleep at the scheduled time.",
+      "Choose 'Change Wallpaper Now' from the menu. If that works, check the selected schedule and whether the Mac was asleep at the scheduled time.",
     icon: Clock
   },
   {
@@ -100,9 +100,9 @@ export const supportPoints = [
     icon: MonitorCheck
   },
   {
-    title: "Use local logs",
+    title: "Include local logs",
     description:
-      "Use Logs > Show Wallpaper History or Logs > Show Runtime Log from the menu. The logs stay on your Mac unless you choose to share details.",
+      "Use Logs > Show Runtime Log from the menu. These diagnostic logs stay on your Mac unless you choose to share details.",
     icon: History
   },
   {
@@ -114,7 +114,7 @@ export const supportPoints = [
   {
     title: "Use GitHub Issues",
     description:
-      "For reproducible bugs and feature requests, open an issue with what happened, what you expected, and whether manual refresh works.",
+      "For reproducible bugs and feature requests, open an issue with what happened, what you expected, the diagnostic logs, and whether manual refresh works.",
     icon: CodeXml
   }
 ];
@@ -122,8 +122,7 @@ export const supportPoints = [
 export const productStats = [
   { label: "Data path", value: "Local Mac only" },
   { label: "Main surface", value: "Menu bar" },
-  { label: "Displays", value: "One image each" },
-  { label: "History", value: "Plain text" }
+  { label: "Displays", value: "One image per display" }
 ];
 
 export const setupChoices = [
