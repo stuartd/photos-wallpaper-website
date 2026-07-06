@@ -23,7 +23,7 @@ export function AboutAppPage() {
               Photos Wallpaper
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl">
-              Photos Wallpaper brings your photo library back to the desktop.
+              Photos Wallpaper brings your Photos library back to the desktop.
               <br />
               <br />
               Revisit your memories as wallpaper across every display, on a schedule that you choose.
@@ -32,12 +32,12 @@ export function AboutAppPage() {
               Everything stays on your Mac.
             </p>
             <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
-              <a
-                href="mailto:testflight@photos-wallpaper.app?subject=Photos%20Wallpaper%20TestFlight"
+              <a 
+                href="https://apps.apple.com/gb/app/photos-wallpaper/id6769191842?mt=12"
                 className="inline-flex items-center justify-center gap-2 rounded-md bg-pine px-5 py-3 text-sm font-semibold text-paper shadow-soft transition hover:bg-fern"
               >
                 <Send size={18} aria-hidden />
-                Join the TestFlight
+                Download from the Mac App Store
               </a>
               <a
                 href="#privacy"
