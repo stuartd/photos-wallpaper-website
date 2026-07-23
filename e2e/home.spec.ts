@@ -5,6 +5,11 @@ test("home page renders the product story", async ({ page }) => {
 
   await expect(page.getByRole("heading", { name: "Photos Wallpaper" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "What it does" })).toBeVisible();
+  const featureSection = page.locator("section").filter({
+    has: page.getByRole("heading", { name: "What it does" })
+  });
+  await expect(featureSection.getByRole("article")).toHaveCount(6);
+  await expect(page.getByRole("heading", { name: "Coming soon: AppleScript" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Privacy Model" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Support" })).toBeVisible();
   await expect(page.getByText("Check Photos permission")).toBeVisible();

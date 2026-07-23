@@ -11,6 +11,7 @@ import {
   Menu,
   MonitorCheck,
   ShieldCheck,
+  SquareTerminal,
   SlidersHorizontal
 } from "lucide-react";
 
@@ -20,19 +21,18 @@ export const appFeatures = [
   {
     title: "Uses your photos",
     description:
-      "Rediscover the photos in your library - Photos Wallpaper brings them back to your desktop, one wallpaper at a time.",
+      "Rediscover the photos in your library - Photos Wallpaper brings them back to your desktop, one memory at a time.",
     icon: Images
   },
   {
     title: "Control it from the menu bar",
-    description:
-      "Refresh the wallpaper, change the schedule, and see the current state without opening a full app window.",
+    description: "Refresh the wallpaper and change the schedule without opening a full app window.",
     icon: Menu
   },
   {
     title: "Find the photo again",
     description:
-      "When you see a wallpaper photo you like (or don't like!) you can use the app to save it to the Photos Wallpaper album in your Photos library.",
+      "When you see a wallpaper photo you like (or don't like!) you can use the menu to save it to the Photos Wallpaper album in your Photos library.",
     icon: History
   },
   {
@@ -47,9 +47,10 @@ export const appFeatures = [
     icon: Clock
   },
   {
-    title: "Keeps it local",
-    description: "No account, analytics, uploads, advertising services, database, or server.",
-    icon: ShieldCheck
+    title: "Coming soon: AppleScript",
+    description:
+      "A future update will let you use AppleScript or the command line to add the current wallpaper photo - or photos across multiple displays - to the Photos Wallpaper album.",
+    icon: SquareTerminal
   }
 ];
 
