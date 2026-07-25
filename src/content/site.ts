@@ -49,7 +49,7 @@ export const appFeatures = [
   {
     title: "Coming soon: AppleScript",
     description:
-      "A future update will let you use AppleScript or the command line to add the current wallpaper photo - or photos across multiple displays - to the Photos Wallpaper album.",
+      "A future update will let you use AppleScript or the command line to add the current wallpaper photo(s) to the Photos Wallpaper album.",
     icon: SquareTerminal
   }
 ];
@@ -58,7 +58,7 @@ export const privacyPoints = [
   {
     title: "Photos permission is required",
     description:
-      "The app asks macOS for Photos access because it needs image data to choose and render wallpapers.",
+      "The app asks macOS for Photos access because it needs to choose and show wallpapers.",
     icon: Lock
   },
   {
@@ -78,7 +78,7 @@ export const privacyPoints = [
 export const privacyDetails = [
   "Photos are read only after macOS Photos permission allows access.",
   "Generated wallpaper files are local cache files used because macOS wallpaper APIs need file URLs.",
-  "Wallpaper history and runtime diagnostics are local plain-text files for your own troubleshooting."
+  "Wallpaper history and runtime diagnostics are local plain-text files for troubleshooting."
 ];
 
 export const supportPoints = [
