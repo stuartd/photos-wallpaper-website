@@ -15,12 +15,12 @@ export function AboutAppPage() {
               A free Mac app
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[0.98] tracking-[-0.045em] sm:text-7xl lg:text-[5.5rem]">
-              See the photos you'd almost forgotten.
+              Rediscover your photos
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/70 sm:text-xl">
-              Photos Wallpaper  brings photographs from your Photos library to your desktop:
-              high days and holidays, ordinary days, you've forgotten and people and places you 
-              haven't seen in a while or have just forgotten.
+              Photos Wallpaper brings photos from your Photos library to your desktop:
+              high days and holidays, ordinary days, people and places you 
+              haven't thought of or seen in a long time.
             </p>
             <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a

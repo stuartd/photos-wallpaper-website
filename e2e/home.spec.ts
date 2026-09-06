@@ -4,7 +4,7 @@ test("home page tells the product story and exposes the important links", async 
   await page.goto("/");
 
   await expect(
-    page.getByRole("heading", { name: "See the photos you’d almost forgotten." })
+    page.getByRole("heading", { name: "Rediscover your photos" })
   ).toBeVisible();
   await expect(page.getByText("A free Mac app from Stuart")).toBeVisible();
   await expect(page.getByRole("img", { name: /Photos Wallpaper menu/ })).toBeVisible();
@@ -41,7 +41,7 @@ test("the home page remains usable on a small screen", async ({ page }) => {
   await page.goto("/");
 
   await expect(
-    page.getByRole("heading", { name: "See the photos you’d almost forgotten." })
+    page.getByRole("heading", { name: "Rediscover your photos" })
   ).toBeVisible();
   await expect(page.getByRole("link", { name: /Get the free app/ })).toBeVisible();
   await expect(page.getByRole("img", { name: /Photos Wallpaper menu/ })).toBeVisible();
