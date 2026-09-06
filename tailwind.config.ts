@@ -6,14 +6,14 @@ const config: Config = {
     extend: {
       colors: {
         ink: "#17181c",
-        paper: "#f5f6f8",
+        paper: "#f7f2e9",
         pine: "#1f4f63",
         fern: "#2f6f6a",
         sun: "#f5c542",
         clay: "#b85c38",
-        line: "#d9dde5",
-        panel: "#ffffff",
-        mist: "#edf1f5"
+        line: "#d8d0c3",
+        panel: "#fffdf8",
+        mist: "#eee8dc"
       },
       fontFamily: {
         sans: [

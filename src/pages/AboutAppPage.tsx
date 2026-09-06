@@ -1,146 +1,151 @@
-import { Mail, Send, Terminal } from "lucide-react";
+import { ArrowDown, ExternalLink, Mail } from "lucide-react";
 import { SiGithub } from "react-icons/si";
-import { FeatureGrid } from "../components/FeatureGrid";
 import { HeroPreview } from "../components/HeroPreview";
-import {
-  appFeatures,
-  privacyDetails,
-  privacyPoints,
-  productStats,
-  supportPoints
-} from "../content/site";
+import { appFeatures, privacyDetails, privacyPoints, supportPoints } from "../content/site";
+
+const appStoreUrl = "https://apps.apple.com/gb/app/photos-wallpaper/id6769191842?mt=12";
 
 export function AboutAppPage() {
   return (
     <>
-      <section className="bg-paper">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-10 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-16">
-          <div className="flex flex-col justify-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-pine">
-              macOS menu bar app
+      <section className="overflow-hidden bg-paper">
+        <div className="mx-auto max-w-6xl px-5 pb-16 pt-14 sm:px-8 sm:pt-20 lg:pb-24 lg:pt-24">
+          <div className="max-w-4xl">
+            <p className="text-sm font-semibold tracking-wide text-clay">
+              A free Mac app from Stuart
             </p>
-            <h1 className="mt-5 max-w-2xl font-display text-4xl font-extrabold leading-[1.04] sm:text-6xl">
-              Photos Wallpaper
+            <h1 className="mt-5 font-display text-5xl font-semibold leading-[0.98] tracking-[-0.045em] sm:text-7xl lg:text-[5.5rem]">
+              See the photos you’d almost forgotten.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl">
-              Photos Wallpaper brings your Photos library back to the desktop.
-              <br />
-              <br />
-              Revisit your memories as wallpaper across every display, on a schedule that you choose.
-              <br />
-              <br />
-              Everything stays on your Mac.
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/70 sm:text-xl">
+              Photos Wallpaper quietly brings photographs from your Photos library to your desktop:
+              old holidays, ordinary days, and people and places you haven’t seen in a while.
             </p>
-            <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
-              <a 
-                href="https://apps.apple.com/gb/app/photos-wallpaper/id6769191842?mt=12"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-pine px-5 py-3 text-sm font-semibold text-paper shadow-soft transition hover:bg-fern"
-              >
-                <Send size={18} aria-hidden />
-                Download from the Mac App Store
-              </a>
+            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a
-                href="#privacy"
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
-              >
-                <Terminal size={18} aria-hidden />
-                Privacy Model
-              </a>
-              <a
-                href="https://github.com/stuartd/photos-wallpaper#readme"
+                href={appStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist sm:col-span-2"
+                className="inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3.5 text-sm font-semibold text-white shadow-soft transition hover:bg-fern focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pine"
               >
-                <SiGithub size={18} aria-hidden />
-                App code on GitHub
+                Download free on the Mac App Store
+                <ExternalLink size={16} aria-hidden />
+              </a>
+              <a
+                href="#how-it-works"
+                className="inline-flex items-center gap-2 px-2 py-2 text-sm font-semibold text-ink/65 underline decoration-line underline-offset-4 transition hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pine"
+              >
+                How it works <ArrowDown size={16} aria-hidden />
               </a>
             </div>
-            <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-3">
-              {productStats.map((stat) => (
-                <div key={stat.label} className="bg-panel p-4">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-ink/50">
-                    {stat.label}
-                  </dt>
-                  <dd className="mt-2 text-sm font-semibold">{stat.value}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
-          <HeroPreview />
+
+          <div className="mt-14 lg:mt-20">
+            <HeroPreview />
+          </div>
         </div>
       </section>
 
-      <section className="border-y border-line bg-panel py-14">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="mb-8 max-w-3xl">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">What it does</h2>
-          </div>
-          <FeatureGrid features={appFeatures} />
-        </div>
-      </section>
-
-      <section id="privacy" className="scroll-mt-24 py-14">
-        <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <section
+        id="how-it-works"
+        className="scroll-mt-24 border-y border-line bg-panel py-16 sm:py-24"
+      >
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">Privacy model</h2>
-            <p className="mt-4 leading-7 text-ink/70">
-              Photos Wallpaper has no database, backend, account layer, analytics, or advertising.
-              It's your photo library, now and always, and support diagnostics stay on disk unless
-              you choose to share them.
-            </p>
-            <ul className="mt-6 grid gap-3 text-sm leading-6 text-ink/72">
-              {privacyDetails.map((detail) => (
-                <li key={detail} className="rounded-md border border-line bg-panel p-4">
-                  {detail}
-                </li>
-              ))}
-            </ul>
+            <p className="eyebrow">The whole idea</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+              Your library, in the background.
+            </h2>
           </div>
-          <FeatureGrid features={privacyPoints} />
+          <div className="divide-y divide-line border-y border-line">
+            {appFeatures.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <article
+                  key={feature.title}
+                  className="grid grid-cols-[2.5rem_1fr] gap-4 py-7 sm:gap-6"
+                >
+                  <div className="font-display text-sm text-clay">0{index + 1}</div>
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <Icon size={19} className="text-pine" aria-hidden />
+                      <h3 className="text-lg font-semibold">{feature.title}</h3>
+                    </div>
+                    <p className="mt-2 max-w-xl leading-7 text-ink/65">{feature.description}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      <section id="support" className="scroll-mt-24 border-t border-line bg-panel py-14">
-        <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <section id="privacy" className="scroll-mt-24 bg-mist py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <div className="max-w-3xl">
+            <p className="eyebrow">Nothing leaves your Mac</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+              Your photos are not the product.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-ink/70">
+              Photos Wallpaper works locally. There is no account, no analytics, and no photo
+              upload. It asks for Photos permission because that is where it finds the pictures to
+              use as wallpaper.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
+            {privacyPoints.map((point) => {
+              const Icon = point.icon;
+              return (
+                <article key={point.title} className="bg-panel p-6 sm:p-8">
+                  <Icon size={22} className="text-pine" aria-hidden />
+                  <h3 className="mt-5 font-semibold">{point.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-ink/65">{point.description}</p>
+                </article>
+              );
+            })}
+          </div>
+          <ul className="mt-8 grid gap-3 text-sm leading-6 text-ink/65 md:grid-cols-3">
+            {privacyDetails.map((detail) => (
+              <li key={detail} className="border-l-2 border-clay pl-4">
+                {detail}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="support" className="scroll-mt-24 bg-paper py-16 sm:py-24">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">Support</h2>
-            <p className="mt-4 leading-7 text-ink/70">
-              Need help with Photos Wallpaper?
+            <p className="eyebrow">Help, if you need it</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight">Support</h2>
+            <p className="mt-5 max-w-md leading-7 text-ink/65">
+              Email is best for general help or anything you would rather not post publicly. You can
+              also open an issue for a reproducible bug or feature request.
             </p>
-            <p className="mt-4 leading-7 text-ink/70">
-              Email is best for general help or anything you would
-              rather not post publicly. Start with the checks here, then include your macOS version,
-              app version, display setup, and relevant local log lines if you need to get in touch.
-            </p>
-            <p className="mt-4 leading-7 text-ink/70">
-              Please only include screenshots or photo details if you intentionally choose to share
-              them.
-            </p>
-            <br />
-            <p>
-              Opening an issue requires a <a href="https://github.com">GitHub</a> account.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="mailto:support@photos-wallpaper.app"
-                className="inline-flex items-center gap-2 rounded-md bg-clay px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine"
-              >
-                <Mail size={18} aria-hidden />
-                Email support
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href="mailto:support@photos-wallpaper.app" className="button-primary">
+                <Mail size={17} aria-hidden /> Email support
               </a>
               <a
                 href="https://github.com/stuartd/photos-wallpaper-website/issues/new"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-line bg-panel px-5 py-3 text-sm font-semibold transition hover:bg-mist"
+                className="button-secondary"
               >
-                <SiGithub size={18} aria-hidden />
-                Open an issue
+                <SiGithub size={17} aria-hidden /> Open an issue
               </a>
             </div>
           </div>
-          <FeatureGrid features={supportPoints} />
+          <ol className="divide-y divide-line border-y border-line">
+            {supportPoints.map((point) => (
+              <li key={point.title} className="py-5">
+                <h3 className="font-semibold">{point.title}</h3>
+                <p className="mt-1 text-sm leading-6 text-ink/65">{point.description}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
     </>

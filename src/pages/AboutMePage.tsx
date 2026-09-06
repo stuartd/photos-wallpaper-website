@@ -7,7 +7,9 @@ export function AboutMePage() {
       <section className="bg-ink text-paper">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-24">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sun">about the maker</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sun">
+              about the maker
+            </p>
             <h1 className="mt-5 font-display text-5xl leading-tight sm:text-6xl">Stuart</h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-paper/72">
               I make small, practical Mac utilities with a bias toward local-first behavior, plain
