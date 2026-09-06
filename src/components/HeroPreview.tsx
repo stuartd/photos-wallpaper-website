@@ -3,10 +3,10 @@ export function HeroPreview() {
     <figure>
       <div className="overflow-hidden rounded-2xl border border-ink/10 bg-ink shadow-soft sm:rounded-3xl">
         <img
-          src="/pw-1280x800.png"
+          src="/pw.png"
           alt="Photos Wallpaper menu showing schedule choices on a Mac desktop"
-          className="aspect-[16/10] w-full object-cover"
-          width="1280"
+          className="h-auto w-full"
+          width="1436"
           height="800"
         />
       </div>
