@@ -47,7 +47,7 @@ export function AppLayout() {
           <div>
             <p className="font-display text-xl font-semibold">Photos Wallpaper</p>
             <p className="mt-2 text-sm text-paper/55">
-              A free, local-first Mac app made by Stuart.
+              A free, local-first Mac app.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-paper/70">

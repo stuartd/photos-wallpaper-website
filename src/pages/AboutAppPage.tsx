@@ -1,4 +1,4 @@
-import { ArrowDown, ExternalLink, Mail } from "lucide-react";
+import { ExternalLink, Mail } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { HeroPreview } from "../components/HeroPreview";
 import { appFeatures, privacyDetails, privacyPoints, supportPoints } from "../content/site";
@@ -12,14 +12,14 @@ export function AboutAppPage() {
         <div className="mx-auto max-w-6xl px-5 pb-16 pt-14 sm:px-8 sm:pt-20 lg:pb-24 lg:pt-24">
           <div className="max-w-4xl">
             <p className="text-sm font-semibold tracking-wide text-clay">
-              A free Mac app from Stuart
+              A free Mac app
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[0.98] tracking-[-0.045em] sm:text-7xl lg:text-[5.5rem]">
-              See the photos you’d almost forgotten.
+              See the photos you'd almost forgotten.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/70 sm:text-xl">
               Photos Wallpaper quietly brings photographs from your Photos library to your desktop:
-              old holidays, ordinary days, and people and places you haven’t seen in a while.
+              old holidays, ordinary days, and people and places you haven't seen in a while.
             </p>
             <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a
@@ -30,13 +30,7 @@ export function AboutAppPage() {
               >
                 Download free on the Mac App Store
                 <ExternalLink size={16} aria-hidden />
-              </a>
-              <a
-                href="#how-it-works"
-                className="inline-flex items-center gap-2 px-2 py-2 text-sm font-semibold text-ink/65 underline decoration-line underline-offset-4 transition hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pine"
-              >
-                How it works <ArrowDown size={16} aria-hidden />
-              </a>
+              </a>              
             </div>
           </div>
 
@@ -84,10 +78,7 @@ export function AboutAppPage() {
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="max-w-3xl">
             <p className="eyebrow">Nothing leaves your Mac</p>
-            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-              Your photos are not the product.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-ink/70">
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl"></h2>            <p className="mt-6 text-lg leading-8 text-ink/70">
               Photos Wallpaper works locally. There is no account, no analytics, and no photo
               upload. It asks for Photos permission because that is where it finds the pictures to
               use as wallpaper.
