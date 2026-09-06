@@ -18,8 +18,9 @@ export function AboutAppPage() {
               See the photos you'd almost forgotten.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/70 sm:text-xl">
-              Photos Wallpaper quietly brings photographs from your Photos library to your desktop:
-              old holidays, ordinary days, and people and places you haven't seen in a while.
+              Photos Wallpaper  brings photographs from your Photos library to your desktop:
+              high days and holidays, ordinary days, you've forgotten and people and places you 
+              haven't seen in a while or have just forgotten.
             </p>
             <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a
@@ -28,7 +29,7 @@ export function AboutAppPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3.5 text-sm font-semibold text-white shadow-soft transition hover:bg-fern focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pine"
               >
-                Download free on the Mac App Store
+                Free from the Mac App Store
                 <ExternalLink size={16} aria-hidden />
               </a>              
             </div>
@@ -79,8 +80,8 @@ export function AboutAppPage() {
           <div className="max-w-3xl">
             <p className="eyebrow">Nothing leaves your Mac</p>
             <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl"></h2>            <p className="mt-6 text-lg leading-8 text-ink/70">
-              Photos Wallpaper works locally. There is no account, no analytics, and no photo
-              upload. It asks for Photos permission because that is where it finds the pictures to
+              Photos Wallpaper works completely locally. There is no account, no analytics, and no photo
+              upload. It has to ask for Photos permission because that is where it gets the pictures to
               use as wallpaper.
             </p>
           </div>
@@ -115,6 +116,10 @@ export function AboutAppPage() {
               Email is best for general help or anything you would rather not post publicly. You can
               also open an issue for a reproducible bug or feature request.
             </p>
+             <p className="mt-5 max-w-md leading-7 text-ink/65">
+              Please only include screenshots of your wallpaper photos if you are comfortable sharing them.
+            </p>
+
             <div className="mt-7 flex flex-wrap gap-3">
               <a href="mailto:support@photos-wallpaper.app" className="button-primary">
                 <Mail size={17} aria-hidden /> Email support
