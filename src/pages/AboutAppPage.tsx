@@ -11,13 +11,13 @@ export function AboutAppPage() {
       <section className="overflow-hidden bg-paper">
         <div className="mx-auto max-w-6xl px-5 pb-16 pt-14 sm:px-8 sm:pt-20 lg:pb-24 lg:pt-24">
           <div className="max-w-4xl">
-            <p className="text-sm font-semibold tracking-wide text-clay">
-              A free Mac app
+            <p className="text-4xl font-semibold tracking-wide text-clay">
+              Your Mac needs to be running macOS 14 or later.
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[0.98] tracking-[-0.045em] sm:text-7xl lg:text-[5.5rem]">
               Rediscover your photos
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/70 sm:text-xl">
+            <p className="mt-7 max-w-2xl text-2lg leading-8 text-ink/70 sm:text-xl">
               Photos Wallpaper brings photos from your Photos library to your desktop:
               high days and holidays, ordinary days, people and places you 
               haven't thought of or seen in a long time.
@@ -60,11 +60,11 @@ export function AboutAppPage() {
                   key={feature.title}
                   className="grid grid-cols-[2.5rem_1fr] gap-4 py-7 sm:gap-6"
                 >
-                  <div className="font-display text-sm text-clay">0{index + 1}</div>
+                  <div className="font-display text-2xl text-clay">0{index + 1}</div>
                   <div>
                     <div className="flex items-center gap-3">
                       <Icon size={19} className="text-pine" aria-hidden />
-                      <h3 className="text-lg font-semibold">{feature.title}</h3>
+                      <h3 className="text-xlfont-semibold">{feature.title}</h3>
                     </div>
                     <p className="mt-2 max-w-xl leading-7 text-ink/65">{feature.description}</p>
                   </div>
@@ -79,7 +79,8 @@ export function AboutAppPage() {
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="max-w-3xl">
             <p className="eyebrow">Nothing leaves your Mac</p>
-            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl"></h2>            <p className="mt-6 text-lg leading-8 text-ink/70">
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl"></h2>            
+            <p className="mt-6 text-lg leading-8 text-ink/70">
               Photos Wallpaper works completely locally. There is no account, no analytics, and no photo
               upload. It has to ask for Photos permission because that is where it gets the pictures to
               use as wallpaper.

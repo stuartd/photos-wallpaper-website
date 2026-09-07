@@ -1,7 +1,7 @@
 export function HeroPreview() {
   return (
     <div className="space-y-12">
-      <h2 className="text-5xl font-bold leading-tight text-ink sm:text-6xl">
+      <h2 className="text-3xl font-bold leading-tight text-ink sm:text-6xl">
         How it works
       </h2>
       <figure>
