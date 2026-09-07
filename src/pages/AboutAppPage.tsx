@@ -52,26 +52,6 @@ export function AboutAppPage() {
               Your library, in the background.
             </h2>
           </div>
-          <div className="divide-y divide-line border-y border-line">
-            {appFeatures.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <article
-                  key={feature.title}
-                  className="grid grid-cols-[2.5rem_1fr] gap-4 py-7 sm:gap-6"
-                >
-                  <div className="font-display text-2xl text-clay">0{index + 1}</div>
-                  <div>
-                    <div className="flex items-center gap-3">
-                      <Icon size={19} className="text-pine" aria-hidden />
-                      <h3 className="text-xlfont-semibold">{feature.title}</h3>
-                    </div>
-                    <p className="mt-2 max-w-xl leading-7 text-ink/65">{feature.description}</p>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
         </div>
       </section>
 
