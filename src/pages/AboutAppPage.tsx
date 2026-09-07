@@ -1,7 +1,7 @@
 import { ExternalLink, Mail } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { HeroPreview } from "../components/HeroPreview";
-import { appFeatures, privacyDetails, privacyPoints, supportPoints } from "../content/site";
+import { privacyDetails, privacyPoints, supportPoints } from "../content/site";
 
 const appStoreUrl = "https://apps.apple.com/gb/app/photos-wallpaper/id6769191842?mt=12";
 
