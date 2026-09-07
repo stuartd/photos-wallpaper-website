@@ -125,7 +125,7 @@ export function AboutAppPage() {
                 <Mail size={17} aria-hidden /> Email support
               </a>
               <a
-                href="https://github.com/stuartd/photos-wallpaper-website/issues/new"
+                href="https://github.com/stuartd/photos-wallpaper/issues/new"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-secondary"
