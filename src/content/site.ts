@@ -3,50 +3,10 @@ import {
   EyeOff,
   FolderOpen,
   History,
-  Images,
-  Laptop,
   Lock,
-  Menu,
   MonitorCheck
 } from "lucide-react";
 
-export const appFeatures = [
-  {
-    title: "Choose your Photos library",
-    description:
-      "Give the app Photos permission, and it can choose pictures you already have without sending them anywhere.",
-    icon: Images
-  },
-  {
-    title: "Let old pictures turn up",
-    description:
-      "Photos appear as your wallpaper, giving the pictures that are easy to lose in a large library another moment in view.",
-    icon: Menu
-  },
-  {
-    title: "Keep one you want to find again",
-    description:
-      "Use the menu to add the current wallpaper to the Photos Wallpaper album in your library.",
-    icon: History
-  },
-  {
-    title: "Set the pace",
-    description:
-      "Choose a schedule from the menu bar, or change the wallpaper yourself whenever you want a different picture.",
-    icon: Clock
-  },
-  {
-    title: "Use every display",
-    description: "If you use more than one display, the app can set a different photo on each one.",
-    icon: Laptop
-  },
-  {
-    title: "Leave it in the menu bar",
-    description:
-      "Refresh the wallpaper and change the schedule without keeping a full app window open.",
-    icon: Menu
-  }
-];
 
 export const privacyPoints = [
   {
@@ -99,10 +59,4 @@ export const supportPoints = [
       "Use Logs > Show Runtime Log from the menu. These diagnostic logs stay on your Mac unless you choose to share details.",
     icon: History
   }
-];
-
-export const stuartHighlights = [
-  "Independent Mac app tinkerer",
-  "Builds small utilities that do one job without an account system",
-  "Likes boring local-first software that respects the machine it runs on"
 ];
