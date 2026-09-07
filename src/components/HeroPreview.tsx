@@ -5,10 +5,10 @@ export function HeroPreview() {
         How it works
       </h2>
       <figure>
-        <figcaption className="mb-5 text-3xl font-bold leading-tight text-ink">
+        <figcaption className="mb-5 text-2xl font-bold leading-tight text-ink">
           The app lives in the menu bar.
         </figcaption>
-         <figcaption className="mb-5 text-3xl font-bold leading-tight text-ink">
+         <figcaption className="mb-5 text-2xl font-bold leading-tight text-ink">
           Choose a schedule, or change the wallpaper whenever you
           feel like it.
         </figcaption>
@@ -25,7 +25,7 @@ export function HeroPreview() {
       </figure>
 
       <figure>
-        <figcaption className="mb-5 text-3xl font-bold leading-tight text-ink">
+        <figcaption className="mb-5 text-2xl font-bold leading-tight text-ink">
           When you see an image you want to find in your library, tell Photos Wallpaper to add the wallpaper image to the Photos Wallpaper album.
         </figcaption>
 
@@ -40,8 +40,8 @@ export function HeroPreview() {
         </div>
       </figure>
       <figure>
-        <figcaption className="mb-5 text-3xl font-bold leading-tight text-ink">
-          Go to the Photos Wallpaper album and revisit the day!
+        <figcaption className="mb-5 text-2xl font-bold leading-tight text-ink">
+          Go to the Photos Wallpaper album and set off on a trip down memory lane.
         </figcaption>
 
         <div className="overflow-hidden rounded-2xl border border-ink/10 bg-ink shadow-soft sm:rounded-3xl">
